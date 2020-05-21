@@ -1,9 +1,12 @@
 import pygame
+import os
 
+os.putenv('SDL_FBDEV', '/dev/fb1')
 pygame.init()
 
 size = (320,240)
 screen = pygame.display.set_mode(size)
+pygame.mouse.set_visible(False)
 
 done = False
 clock = pygame.time.Clock()
