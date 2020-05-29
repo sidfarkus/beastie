@@ -26,11 +26,11 @@ def render_active_beastie(screen, beastie):
 while not done:
   for event in pygame.event.get():
     if event.type == pygame.KEYDOWN:
-      if event.key == pygame.locals.K_ESCAPE:
+      if event.key == pygame.K_ESCAPE:
         done = True
-      if event.key == pygame.locals.K_UP:
+      if event.key == pygame.K_UP:
         active = (active - 1) % len(beasties)
-      if event.key == pygame.locals.K_DOWN:
+      if event.key == pygame.K_DOWN:
         active = (active + 1) % len(beasties)
     if event.type == pygame.QUIT:
       done = True
