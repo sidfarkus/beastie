@@ -13,7 +13,7 @@ done = False
 clock = pygame.time.Clock()
 
 splash = pygame.image.load("splash.png")
-splash_duration = 5
+splash_duration = 5000.0
 
 active = 0
 beasties = [
@@ -40,6 +40,7 @@ while not done:
 
   if splash_duration >= 0:
     screen.blit(splash, (0, 0))
+    splash_duration -= clock.get_time()
   else:
     render_active_beastie(screen, beasties[active])
 
