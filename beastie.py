@@ -19,6 +19,7 @@ class Beastie:
     self.description = description
     self.abilities = abilities
     self.image_path = image_path
+    self.cached_img = None
 
   def surface(self):
     if not self.cached_img:
