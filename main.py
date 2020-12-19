@@ -18,7 +18,8 @@ splash_duration = 5000.0
 active = 0
 beasties = [
   Beastie(name="cubey", description="A cubey", abilities=[], image_path="cubey1.png"),
-  Beastie(name="slimo", description="Found in valleys", abilities=[], image_path="slimo.png")
+  Beastie(name="slimo", description="Found in valleys", abilities=[], image_path="slimo.png"),
+  Beastie(name="circles", description="Sir Circles the XXVII", abilities=[], image_path="sircirclesI.png")
 ]
 
 def render_active_beastie(screen, beastie):
